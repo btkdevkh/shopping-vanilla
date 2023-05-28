@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Shopping</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <h1 class="header-title">SHOPPING TIME</h1>
+
+        <!-- Form -->
+        <form class="form-goods" id="form-goods">
+          <input
+            type="text"
+            placeholder="What do you want to buy ?"
+            name="goodName"
+          />
+          <input class="btn" type="submit" value="ADD" />
+        </form>
+      </div>
+    </header>
+
+    <main class="container-main">
+      <!-- No goods -->
+      <p class="no-good" id="no-good">Please add goods to buy !</p>
+
+      <!-- Goods -->
+      <div class="goods-list" id="goods-list"></div>
+
+      <!-- Done -->
+      <p class="done" id="done">
+        <span>DONE !</span> <i class="fa-solid fa-eraser" id="delete-all"></i>
+      </p>
+    </main>
+  </body>
+</html>
